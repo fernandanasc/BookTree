@@ -53,11 +53,31 @@ public class Main {
             
             // 5. ORDENACAO COM MERGESORT
             System.out.println("\n4. ALGORITMO MERGESORT:");
+            
+            // Ordenação por ano
             System.out.println("Ordenando publicacoes por ano de publicacao:");
-            List<Publicacao> lista = new ArrayList<>(repo.listar());
-            MergeSort<Publicacao> mergeSort = new MergeSort<>(Comparadores.porAno());
-            mergeSort.ordenar(lista);
-            for (Publicacao pub : lista) {
+            List<Publicacao> listaAno = new ArrayList<>(repo.listar());
+            MergeSort<Publicacao> mergeSortAno = new MergeSort<>(Comparadores.porAno());
+            mergeSortAno.ordenar(listaAno);
+            for (Publicacao pub : listaAno) {
+                System.out.println("  " + pub);
+            }
+            
+            // Ordenação por título
+            System.out.println("\nOrdenando publicacoes por titulo:");
+            List<Publicacao> listaTitulo = new ArrayList<>(repo.listar());
+            MergeSort<Publicacao> mergeSortTitulo = new MergeSort<>(Comparadores.porTitulo());
+            mergeSortTitulo.ordenar(listaTitulo);
+            for (Publicacao pub : listaTitulo) {
+                System.out.println("  " + pub);
+            }
+            
+            // Ordenação por autor
+            System.out.println("\nOrdenando publicacoes por autor:");
+            List<Publicacao> listaAutor = new ArrayList<>(repo.listar());
+            MergeSort<Publicacao> mergeSortAutor = new MergeSort<>(Comparadores.porAutor());
+            mergeSortAutor.ordenar(listaAutor);
+            for (Publicacao pub : listaAutor) {
                 System.out.println("  " + pub);
             }
             
