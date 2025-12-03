@@ -165,11 +165,13 @@ Classe: RepositorioHash
   ✓ Excecao capturada: Ano deve ser maior ou igual a 1500.
 ```
 
-## Autor
-Fernanda Nascimento - 02/12/2025
+## Informações Acadêmicas
 
-## Disciplina
-Linguagem de Programação II
+**Autor:** Fernanda Nascimento - 02/12/2025  
+**Disciplina:** Linguagem de Programação II  
+**Professor:** Alan de Oliveira Santana  
+**Instituição:** Universidade Federal do Rio Grande do Norte  
+**Curso:** Bacharelado em Tecnologia da Informação
 
 ---
 
